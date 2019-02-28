@@ -8,8 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		77A02F7C2226688700550521 /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A02F7B2226688700550521 /* Track.swift */; };
+		77A637A92227A7AE00953908 /* SongsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A637A82227A7AE00953908 /* SongsListViewModel.swift */; };
+		77A637AB2227A7BD00953908 /* SongsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A637AA2227A7BD00953908 /* SongsListViewController.swift */; };
+		77A637AF2227BD7500953908 /* Observable+Logging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A637AE2227BD7500953908 /* Observable+Logging.swift */; };
 		77ACCB272223B3B30087F4E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77ACCB262223B3B30087F4E4 /* AppDelegate.swift */; };
-		77ACCB292223B3B30087F4E4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77ACCB282223B3B30087F4E4 /* ViewController.swift */; };
 		77ACCB2C2223B3B30087F4E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77ACCB2A2223B3B30087F4E4 /* Main.storyboard */; };
 		77ACCB2E2223B3B40087F4E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77ACCB2D2223B3B40087F4E4 /* Assets.xcassets */; };
 		77ACCB312223B3B40087F4E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77ACCB2F2223B3B40087F4E4 /* LaunchScreen.storyboard */; };
@@ -43,9 +45,11 @@
 		4FCDB542B83D04DD4C2BF2AF /* Pods-FileDownload.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FileDownload.release.xcconfig"; path = "Target Support Files/Pods-FileDownload/Pods-FileDownload.release.xcconfig"; sourceTree = "<group>"; };
 		70583A91BAC7237C37D9B350 /* Pods-FileDownloadUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FileDownloadUITests.debug.xcconfig"; path = "Target Support Files/Pods-FileDownloadUITests/Pods-FileDownloadUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		77A02F7B2226688700550521 /* Track.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
+		77A637A82227A7AE00953908 /* SongsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongsListViewModel.swift; sourceTree = "<group>"; };
+		77A637AA2227A7BD00953908 /* SongsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongsListViewController.swift; sourceTree = "<group>"; };
+		77A637AE2227BD7500953908 /* Observable+Logging.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Observable+Logging.swift"; sourceTree = "<group>"; };
 		77ACCB232223B3B30087F4E4 /* FileDownload.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FileDownload.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77ACCB262223B3B30087F4E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		77ACCB282223B3B30087F4E4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		77ACCB2B2223B3B30087F4E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		77ACCB2D2223B3B40087F4E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		77ACCB302223B3B40087F4E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -118,14 +122,16 @@
 		77ACCB252223B3B30087F4E4 /* FileDownload */ = {
 			isa = PBXGroup;
 			children = (
+				77A637AE2227BD7500953908 /* Observable+Logging.swift */,
 				77ACCB262223B3B30087F4E4 /* AppDelegate.swift */,
-				77ACCB282223B3B30087F4E4 /* ViewController.swift */,
 				77ACCB2A2223B3B30087F4E4 /* Main.storyboard */,
 				77ACCB2D2223B3B40087F4E4 /* Assets.xcassets */,
 				77ACCB2F2223B3B40087F4E4 /* LaunchScreen.storyboard */,
 				77ACCB322223B3B40087F4E4 /* Info.plist */,
 				77B5EDA1222662D90022F554 /* NetworkManager.swift */,
 				77A02F7B2226688700550521 /* Track.swift */,
+				77A637A82227A7AE00953908 /* SongsListViewModel.swift */,
+				77A637AA2227A7BD00953908 /* SongsListViewController.swift */,
 			);
 			path = FileDownload;
 			sourceTree = "<group>";
@@ -406,9 +412,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				77B5EDA2222662D90022F554 /* NetworkManager.swift in Sources */,
-				77ACCB292223B3B30087F4E4 /* ViewController.swift in Sources */,
+				77A637AF2227BD7500953908 /* Observable+Logging.swift in Sources */,
 				77ACCB272223B3B30087F4E4 /* AppDelegate.swift in Sources */,
 				77A02F7C2226688700550521 /* Track.swift in Sources */,
+				77A637A92227A7AE00953908 /* SongsListViewModel.swift in Sources */,
+				77A637AB2227A7BD00953908 /* SongsListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
