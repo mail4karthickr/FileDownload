@@ -10,13 +10,13 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-class SongsListViewController: UIViewController {
+class SongsListViewController: UIViewController, StoryboardInitializable {
     
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var tableView: UITableView!
     
     private var disposeBag = DisposeBag()
-    private let viewModel = SongsListViewModel()
+    var viewModel: SongsListViewModel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
