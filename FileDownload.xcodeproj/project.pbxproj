@@ -22,6 +22,7 @@
 		77B72EF0223B6957007CAC2D /* SongsListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B72EEF223B6957007CAC2D /* SongsListCoordinator.swift */; };
 		77B72EF2223B6C04007CAC2D /* StoryboardInitializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B72EF1223B6C04007CAC2D /* StoryboardInitializable.swift */; };
 		77B72EF4223B775B007CAC2D /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B72EF3223B775B007CAC2D /* AppCoordinator.swift */; };
+		77B7EFBE223BF26200EE7ED2 /* UISearchBar+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B7EFBD223BF26200EE7ED2 /* UISearchBar+Ext.swift */; };
 		89B43E1EC3B108286B0E40D5 /* Pods_FileDownload.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 008576874FF49B5CB3553D94 /* Pods_FileDownload.framework */; };
 		E4884FCD72A2BAA4CDF49F9C /* Pods_FileDownloadUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A251BA22A10E9E87DB26140F /* Pods_FileDownloadUITests.framework */; };
 		EFACB19C1757FBBEA516C676 /* Pods_FileDownloadTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A1936C8E2EE3C9EF5B0F932 /* Pods_FileDownloadTests.framework */; };
@@ -69,6 +70,7 @@
 		77B72EEF223B6957007CAC2D /* SongsListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongsListCoordinator.swift; sourceTree = "<group>"; };
 		77B72EF1223B6C04007CAC2D /* StoryboardInitializable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardInitializable.swift; sourceTree = "<group>"; };
 		77B72EF3223B775B007CAC2D /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		77B7EFBD223BF26200EE7ED2 /* UISearchBar+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISearchBar+Ext.swift"; sourceTree = "<group>"; };
 		7A1936C8E2EE3C9EF5B0F932 /* Pods_FileDownloadTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FileDownloadTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FCB6141FDC2CD7A548E6742 /* Pods-FileDownloadTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FileDownloadTests.release.xcconfig"; path = "Target Support Files/Pods-FileDownloadTests/Pods-FileDownloadTests.release.xcconfig"; sourceTree = "<group>"; };
 		A251BA22A10E9E87DB26140F /* Pods_FileDownloadUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FileDownloadUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -144,6 +146,7 @@
 				77B72EEF223B6957007CAC2D /* SongsListCoordinator.swift */,
 				77B72EF1223B6C04007CAC2D /* StoryboardInitializable.swift */,
 				77B72EF3223B775B007CAC2D /* AppCoordinator.swift */,
+				77B7EFBD223BF26200EE7ED2 /* UISearchBar+Ext.swift */,
 			);
 			path = FileDownload;
 			sourceTree = "<group>";
@@ -423,6 +426,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77B7EFBE223BF26200EE7ED2 /* UISearchBar+Ext.swift in Sources */,
 				77B5EDA2222662D90022F554 /* NetworkManager.swift in Sources */,
 				77A637AF2227BD7500953908 /* Observable+Logging.swift in Sources */,
 				77B72EF4223B775B007CAC2D /* AppCoordinator.swift in Sources */,
